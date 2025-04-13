@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Secciones generales */
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+  
+  /* HERO */
+  #hero {
+    background-color: #1e293b;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  #hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  /* PROYECTOS */
+  .proyecto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2563eb;
+  }
+  
+  /* SKILLS */
+  #skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  #skills li {
+    background-color: #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+   /* Botón modo oscuro */
+  #modo-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  /* Estilo modo oscuro */
+  .dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode section {
+    background-color: #1e293b;
+  }
+  
+  .dark-mode .proyecto {
+    background-color: #334155;
+  }
+  
+  .dark-mode #skills li {
+    background-color: #475569;
+  }
+  
+  .dark-mode a {
+    color: #60a5fa;
+  }
+  .btn-descargar {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+  .btn-descargar {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+    
