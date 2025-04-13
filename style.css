@@ -128,13 +128,21 @@
     text-decoration: none;
     margin-top: 15px;
   }
-  .btn-descargar {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 15px;
-  }
+
     
+  section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .redes a {
+    margin: 0 10px;
+    color: #60a5fa;
+    text-decoration: none;
+  }
+  
