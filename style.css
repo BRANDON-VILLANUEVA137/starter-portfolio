@@ -145,6 +145,11 @@
     margin-top: 15px;
   }
 
+  .btn-descargar:hover{
+    background-color: #0f172a;
+
+  }
+
     
   section {
     opacity: 0;
