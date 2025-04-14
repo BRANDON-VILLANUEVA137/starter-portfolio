@@ -18,10 +18,16 @@
     text-align: center;
   }
   
-  h1, h2 {
+  h1  {
+    margin-bottom: 20px;
+    color: #ebeaea;
+  }
+
+  h2{
     margin-bottom: 20px;
     color: #000000;
-  }
+    
+  } 
   
   p {
     max-width: 600px;
@@ -121,9 +127,14 @@
   }
   
   .dark-mode section {
-    background-color: #1e293b;
+    background-color: #1d2c44;
   }
   
+  .dark-mode h2{
+    margin-bottom: 20px;
+    color: #dfe2e6;
+    
+  } 
   .dark-mode .proyecto {
     background-color: #334155;
   }
