@@ -1,188 +1,110 @@
-/* Reset básico */
+/* Reset básico para normalizar estilos entre navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     background-color: #f7f7f7;
     color: #333;
-  }
-  
-  /* Secciones generales */
-  section {
+}
+
+/* Secciones generales */
+section {
     padding: 60px 20px;
     text-align: center;
-  }
-  
-  h1  {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* Estilo cuando la sección entra en pantalla (scroll) */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Títulos principales */
+h1 {
     margin-bottom: 20px;
     color: #ebeaea;
-  }
+}
 
-  h2{
+h2 {
     margin-bottom: 20px;
     color: #000000;
-    
-  } 
-  
-  p {
+}
+
+/* Párrafos centrados y con ancho limitado */
+p {
     max-width: 600px;
     margin: 0 auto 20px;
-  }
-  
-  /* HERO */
-  #hero {
+}
+
+/* Sección HERO (introducción principal) */
+#hero {
     background-color: #1e293b;
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
-  }
-  
-  #hero img {
+}
+
+#hero img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  
-  /* PROYECTOS */
-  .proyecto {
+}
+
+/* Tarjetas de proyectos */
+.proyecto {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  
-  .ver_proyectos{
-   display: inline-block;
+}
+
+/* Botón para ver más proyectos */
+.ver_proyectos {
+    display: inline-block;
     background-color: #2563eb;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 1px;
-  }
-  
-  .ver_proyectos:hover{
-    background-color: #0f172a;
-  }
+}
 
-  .proyecto a {
+.ver_proyectos:hover {
+    background-color: #0f172a;
+}
+
+/* Enlaces dentro de tarjetas de proyecto */
+.proyecto a {
     display: inline-block;
     margin-top: 1px;
     text-decoration: none;
     color: #FFF;
-  }
+}
 
-  
-  
-  /* SKILLS */
-  #skills ul {
+/* Lista de habilidades (skills) */
+#skills ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-  }
-  
-  #skills li {
-    background-color: #e2e8f0;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  
-  /* FOOTER */
-  footer {
-    background-color: #1e293b;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  }
-   /* Botón modo oscuro */
-  #modo-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  /* Estilo modo oscuro */
-  .dark-mode {
-    background-color: #0f172a;
-    color: #f1f5f9;
-  }
-  
-  .dark-mode section {
-    background-color: #1d2c44;
-  }
-  
-  .dark-mode h2{
-    margin-bottom: 20px;
-    color: #dfe2e6;
-    
-  } 
-  .dark-mode .proyecto {
-    background-color: #334155;
-  }
-  
-  .dark-mode #skills li {
-    background-color: #dfe2e6;
-  }
-  
-  .dark-mode #skills  span{
-    color: #000000;
-  }
+}
 
-  .dark-mode a {
-    color: #FFF;
-  }
-  .btn-descargar {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 15px;
-  }
-
-  .btn-descargar:hover{
-    background-color: #0f172a;
-
-  }
-
-    
-  section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-  }
-  
-  section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .redes a {
-    margin: 0 10px;
-    color: #60a5fa;
-    text-decoration: none;
-  }
-  
-  #skills li {
+/* Estilos de cada ítem de habilidad */
+#skills li {
     background-color: #e2e8f0;
     padding: 15px;
     border-radius: 20px;
@@ -195,14 +117,87 @@
     justify-content: center;
     gap: 8px;
     transition: transform 0.3s ease;
-  }
-  
-  #skills li img {
+}
+
+#skills li img {
     width: 40px;
     height: 40px;
-  }
-  
-  #skills li:hover {
+}
+
+#skills li:hover {
     transform: scale(1.05);
-  }
-  
+}
+
+/* Pie de página */
+footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Enlaces de redes sociales */
+.redes a {
+    margin: 0 10px;
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+/* Botón flotante para alternar modo oscuro */
+#modo-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Modo oscuro (estilos alternativos) */
+.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+.dark-mode section {
+    background-color: #1d2c44;
+}
+
+.dark-mode h2 {
+    color: #dfe2e6;
+}
+
+.dark-mode .proyecto {
+    background-color: #334155;
+}
+
+.dark-mode #skills li {
+    background-color: #dfe2e6;
+}
+
+.dark-mode #skills span {
+    color: #000000;
+}
+
+.dark-mode a {
+    color: #FFF;
+}
+
+/* Botón de descarga (por ejemplo, CV) */
+.btn-descargar {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn-descargar:hover {
+    background-color: #0f172a;
+}

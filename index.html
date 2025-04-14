@@ -2,45 +2,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Configuración básica del documento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portafolio | Brandon Dev - Fullstack Developer</title>
-  <link rel="stylesheet" href="style.css" />
 
+  <!-- Título del sitio que se muestra en la pestaña del navegador -->
+  <title>Portafolio | Brandon Dev - Fullstack Developer</title>
+
+  <!-- Enlace a la hoja de estilos externa -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <button id="modo-toggle">Modo Oscuro</button>
 
-  <!-- Encabezado o hero -->
+  <!-- Botón fijo en la esquina superior derecha para activar modo oscuro -->
+  <button id="modo-toggle">Modo Oscuro</button>
+
+  <!-- Sección principal de presentación (hero) -->
   <section id="hero">
-    <h1>Hola, soy Brandon Desing</h1>
+    <h1>Hola, soy Brandon-Desing</h1>
     <p>Desarrollador web apasionado por crear experiencias increíbles.</p>
+
+    <!-- Imagen de perfil -->
     <img src="assets/profile.png" alt="Foto de perfil" />
   </section>
 
-  <!-- about me/ Sobre mí -->
+  <!-- Sección "Sobre mí" con una descripción breve del desarrollador -->
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
-    <p>Soy desarrollador fullstack con experiencia en Node.js, MySQL, y sistemas MVC. Me encanta automatizar procesos y crear soluciones para negocios reales.</p>
+    <p>
+      Soy desarrollador fullstack con experiencia en Node.js, MySQL y sistemas MVC.
+      Me encanta automatizar procesos y crear soluciones para negocios reales.
+    </p>
   </section>
 
-  
-
-  <!-- Proyects/Proyectos -->
+  <!-- Sección de proyectos personales o profesionales -->
   <section id="proyectos">
     <h2>Proyectos</h2>
+
+    <!-- Proyecto individual -->
     <div class="proyecto">
       <h3>Sistema de Restaurante</h3>
-      <p>Un sistema completo de pedidos usando arquitectura MVC con Node.js, MySQL.</p>
-      <div class="ver_proyectos"><a href="#">Ver proyecto</a></div>
+      <p>Un sistema completo de pedidos usando arquitectura MVC con Node.js y MySQL.</p>
+
+      <!-- Botón/enlace para ver el proyecto (puedes reemplazar el # con un link real) -->
+      <div class="ver_proyectos">
+        <a href="#">Ver proyecto</a>
+      </div>
     </div>
-    <!-- Puedes duplicar este bloque para más proyectos o hacerlo dinamico -->
+
+    <!-- Puedes duplicar el bloque anterior para añadir más proyectos -->
   </section>
 
-  <!-- Skills -->
+  <!-- Sección de habilidades o tecnologías dominadas -->
   <section id="skills">
     <h2>Habilidades</h2>
+
+    <!-- Lista de tecnologías con íconos y etiquetas -->
     <ul>
       <li>
         <img src="/assets/html.svg" alt="HTML">
@@ -64,26 +81,35 @@
       </li>
     </ul>
   </section>
-  
-  <!-- Contact/Contacto -->
+
+  <!-- Sección de contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
     <p>¿Quieres trabajar conmigo? Escríbeme a:</p>
-    <a href="mailto:brandon.dev@example.com">brandon.dev@example.com</a>
-    <a href="assets/CV_Ejemplo_Desarrollador.pdf" download class="btn-descargar">Descargar CV</a>
 
+    <!-- Dirección de correo con enlace directo para enviar email -->
+    <a href="mailto:example.dev@example.com">example.dev@example.com</a>
+
+    <!-- Botón para descargar el currículum en PDF -->
+    <a href="assets/CV_Ejemplo_Desarrollador.pdf" download class="btn-descargar">
+      Descargar CV
+    </a>
   </section>
 
-  <!-- Footer -->
+  <!-- Pie de página -->
   <footer>
     <p>&copy; 2025 Brandon Dev</p>
-    <div class="redes">
-        <!--   Icons here /Iconos aquí-->
-        <a href="https://github.com/tuusuario" target="_blank"><img src="assets/github.svg" alt="GitHub" /></a>
 
-      </div>
-      
+    <!-- Iconos de redes sociales -->
+    <div class="redes">
+      <a href="https://github.com/tuusuario" target="_blank">
+        <img src="assets/github.svg" alt="GitHub" />
+      </a>
+      <!-- Puedes agregar más iconos aquí como LinkedIn, Twitter, etc. -->
+    </div>
   </footer>
+
+  <!-- Enlace al archivo JavaScript principal -->
+  <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
