@@ -132,6 +132,10 @@
     background-color: #dfe2e6;
   }
   
+  .dark-mode #skills  span{
+    color: #000000;
+  }
+
   .dark-mode a {
     color: #FFF;
   }
