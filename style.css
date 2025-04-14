@@ -54,12 +54,28 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
+  .ver_proyectos{
+   display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1px;
+  }
+  
+  .ver_proyectos:hover{
+    background-color: #0f172a;
+  }
+
   .proyecto a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 1px;
     text-decoration: none;
-    color: #2563eb;
+    color: #FFF;
   }
+
+  
   
   /* SKILLS */
   #skills ul {
@@ -113,11 +129,11 @@
   }
   
   .dark-mode #skills li {
-    background-color: #475569;
+    background-color: #dfe2e6;
   }
   
   .dark-mode a {
-    color: #60a5fa;
+    color: #FFF;
   }
   .btn-descargar {
     display: inline-block;
