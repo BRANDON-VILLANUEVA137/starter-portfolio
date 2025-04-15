@@ -1,203 +1,145 @@
-/* Reset básico para normalizar estilos entre navegadores */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales del cuerpo del documento */
 body {
     font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-/* Secciones generales */
-section {
-    padding: 60px 20px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-}
-
-/* Estilo cuando la sección entra en pantalla (scroll) */
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Títulos principales */
-h1 {
-    margin-bottom: 20px;
-    color: #ebeaea;
-}
-
-h2 {
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-/* Párrafos centrados y con ancho limitado */
-p {
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-/* Sección HERO (introducción principal) */
-#hero {
-    background-color: #1e293b;
-    color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-#hero img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Tarjetas de proyectos */
-.proyecto {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Botón para ver más proyectos */
-.ver_proyectos {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 1px;
-}
-
-.ver_proyectos:hover {
-    background-color: #0f172a;
-}
-
-/* Enlaces dentro de tarjetas de proyecto */
-.proyecto a {
-    display: inline-block;
-    margin-top: 1px;
-    text-decoration: none;
-    color: #FFF;
-}
-
-/* Lista de habilidades (skills) */
-#skills ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-/* Estilos de cada ítem de habilidad */
-#skills li {
-    background-color: #e2e8f0;
-    padding: 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    width: 100px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: transform 0.3s ease;
-}
-
-#skills li img {
-    width: 40px;
-    height: 40px;
-}
-
-#skills li:hover {
-    transform: scale(1.05);
-}
-
-/* Pie de página */
-footer {
-    background-color: #1e293b;
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-/* Enlaces de redes sociales */
-.redes a {
-    margin: 0 10px;
-    color: #60a5fa;
-    text-decoration: none;
-}
-
-/* Botón flotante para alternar modo oscuro */
-#modo-toggle {
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #1e293b;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #modo-toggle {
     position: fixed;
     top: 20px;
     right: 20px;
     background: #2563eb;
     color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
     cursor: pointer;
     z-index: 999;
-}
-
-/* Modo oscuro (estilos alternativos) */
-.dark-mode {
-    background-color: #0f172a;
-    color: #f1f5f9;
-}
-
-.dark-mode section {
-    background-color: #1d2c44;
-}
-
-.dark-mode h2 {
-    color: #dfe2e6;
-}
-
-.dark-mode .proyecto {
-    background-color: #334155;
-}
-
-.dark-mode #skills li {
-    background-color: #dfe2e6;
-}
-
-.dark-mode #skills span {
-    color: #000000;
-}
-
-.dark-mode a {
-    color: #FFF;
-}
-
-/* Botón de descarga (por ejemplo, CV) */
-.btn-descargar {
+  }
+  
+  .grid-tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .columna {
+    overflow-y: auto;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tarjeta {
+    background-color: white;
+    border-right: 1px solid #e2e8f0;
+    transition: background 0.3s;
+  }
+  
+  .tarjeta:last-child {
+    border-right: none;
+  }
+  
+  .foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .skills {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .skills li {
+    background-color: #e2e8f0;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .skills img {
+    width: 20px;
+  }
+  
+  .proyecto a,
+  .btn-descargar {
     display: inline-block;
+    margin-top: 10px;
     background-color: #2563eb;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 16px;
+    border-radius: 8px;
     text-decoration: none;
-    margin-top: 15px;
-}
-
-.btn-descargar:hover {
+    font-size: 14px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+  }
+  
+  /* 🌑 Modo oscuro */
+  body.dark-mode {
     background-color: #0f172a;
-}
+    color: #f1f5f9;
+  }
+  
+  body.dark-mode .tarjeta {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+  
+  body.dark-mode .skills li {
+    background-color: #334155;
+    color: #f8fafc;
+  }
+  
+  body.dark-mode .btn-descargar,
+  body.dark-mode .proyecto a {
+    background-color: #3b82f6;
+  }
+  
+  body.dark-mode footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+  }
+  
+  /* 📱 Responsive (para móviles) */
+  @media (max-width: 900px) {
+    .grid-tres-columnas {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  
+    .tarjeta {
+      border-right: none;
+      border-bottom: 1px solid #e2e8f0;
+    }
+  
+    .tarjeta:last-child {
+      border-bottom: none;
+    }
+  }
+  

@@ -1,115 +1,61 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Configuración básica del documento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- Título del sitio que se muestra en la pestaña del navegador -->
   <title>Portafolio | Brandon Dev - Fullstack Developer</title>
-
-  <!-- Enlace a la hoja de estilos externa -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Botón de modo oscuro -->
+  <button id="modo-toggle">🌓</button>
 
-  <!-- Botón fijo en la esquina superior derecha para activar modo oscuro -->
-  <button id="modo-toggle">Modo Oscuro</button>
+  <main class="grid-tres-columnas">
+    
+    <!-- Columna 1: Presentación -->
+    <section class="tarjeta columna" id="hero">
+      <img src="assets/profile.png" alt="Foto de perfil" class="foto-perfil">
+      <h1>Brandon Design</h1>
+      <p>Desarrollador Fullstack</p>
+    </section>
 
-  <!-- Sección principal de presentación (hero) -->
-  <section id="hero">
-    <h1>Hola, soy Brandon-Desing</h1>
-    <p>Desarrollador web apasionado por crear experiencias increíbles.</p>
+    <!-- Columna 2: Sobre mí y Skills -->
+    <section class="tarjeta columna" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Apasionado del código, automatizaciones y sistemas reales. Experiencia en arquitectura MVC, Node y MySQL.</p>
+      
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><img src="assets/html.svg"><span>HTML</span></li>
+        <li><img src="assets/css.svg"><span>CSS</span></li>
+        <li><img src="assets/java-script.svg"><span>JS</span></li>
+        <li><img src="assets/nodejs.svg"><span>Node</span></li>
+        <li><img src="assets/mysql.svg"><span>MySQL</span></li>
+      </ul>
+    </section>
 
-    <!-- Imagen de perfil -->
-    <img src="assets/profile.png" alt="Foto de perfil" />
-  </section>
-
-  <!-- Sección "Sobre mí" con una descripción breve del desarrollador -->
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>
-      Soy desarrollador fullstack con experiencia en Node.js, MySQL y sistemas MVC.
-      Me encanta automatizar procesos y crear soluciones para negocios reales.
-    </p>
-  </section>
-
-  <!-- Sección de proyectos personales o profesionales -->
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-
-    <!-- Proyecto individual -->
-    <div class="proyecto">
-      <h3>Sistema de Restaurante</h3>
-      <p>Un sistema completo de pedidos usando arquitectura MVC con Node.js y MySQL.</p>
-
-      <!-- Botón/enlace para ver el proyecto (puedes reemplazar el # con un link real) -->
-      <div class="ver_proyectos">
+    <!-- Columna 3: Proyectos y Contacto -->
+    <section class="tarjeta columna" id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyecto">
+        <h3>Sistema Restaurante</h3>
+        <p>Pedidos con MVC en Node.js + MySQL.</p>
         <a href="#">Ver proyecto</a>
       </div>
-    </div>
 
-    <!-- Puedes duplicar el bloque anterior para añadir más proyectos -->
-  </section>
+      <h2>Contacto</h2>
+      <p>¿Colaboramos?</p>
+      <a href="mailto:example.dev@example.com">example.dev@example.com</a><br>
+      <a class="btn-descargar" href="assets/CV_Brandon.pdf" download>Descargar CV</a>
+    </section>
 
-  <!-- Sección de habilidades o tecnologías dominadas -->
-  <section id="skills">
-    <h2>Habilidades</h2>
+  </main>
 
-    <!-- Lista de tecnologías con íconos y etiquetas -->
-    <ul>
-      <li>
-        <img src="/assets/html.svg" alt="HTML">
-        <span>HTML</span>
-      </li>
-      <li>
-        <img src="/assets/css.svg" alt="CSS">
-        <span>CSS</span>
-      </li>
-      <li>
-        <img src="/assets/java-script.svg" alt="JavaScript">
-        <span>JavaScript</span>
-      </li>
-      <li>
-        <img src="/assets/nodejs.svg" alt="Node.js">
-        <span>Node.js</span>
-      </li>
-      <li>
-        <img src="/assets/mysql.svg" alt="MySQL">
-        <span>MySQL</span>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Sección de contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Quieres trabajar conmigo? Escríbeme a:</p>
-
-    <!-- Dirección de correo con enlace directo para enviar email -->
-    <a href="mailto:example.dev@example.com">example.dev@example.com</a>
-
-    <!-- Botón para descargar el currículum en PDF -->
-    <a href="assets/CV_Ejemplo_Desarrollador.pdf" download class="btn-descargar">
-      Descargar CV
-    </a>
-  </section>
-
-  <!-- Pie de página -->
   <footer>
     <p>&copy; 2025 Brandon Dev</p>
-
-    <!-- Iconos de redes sociales -->
-    <div class="redes">
-      <a href="https://github.com/tuusuario" target="_blank">
-        <img src="assets/github.svg" alt="GitHub" />
-      </a>
-      <!-- Puedes agregar más iconos aquí como LinkedIn, Twitter, etc. -->
-    </div>
   </footer>
 
-  <!-- Enlace al archivo JavaScript principal -->
   <script src="main.js"></script>
 </body>
+
 </html>
