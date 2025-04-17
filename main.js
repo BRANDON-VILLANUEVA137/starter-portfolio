@@ -5,6 +5,7 @@ const toggleBtn = document.getElementById("modo-toggle");
 toggleBtn.addEventListener("click", () => {
   // Alterna (agrega o quita) la clase 'dark-mode' al body
   document.body.classList.toggle("dark-mode");
+  toggleBtn.classList.toggle('boton-amarillo');
 });
 
 // Selecciona todas las secciones del sitio (hero, sobre mí, proyectos, etc.)

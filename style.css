@@ -19,6 +19,12 @@ body {
     cursor: pointer;
     z-index: 999;
   }
+
+  .boton-amarillo {
+    background-color: #facc15 !important; /* Amarillo (Tailwind yellow-400) */
+    color: #1e293b; /* Texto oscuro para contraste */
+  }
+  
   
   .grid-tres-columnas {
     display: grid;
