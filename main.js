@@ -31,3 +31,10 @@ window.addEventListener("scroll", showOnScroll);
 
 // También ejecuta showOnScroll al cargar la página para mostrar las secciones ya visibles
 window.addEventListener("load", showOnScroll);
+
+// 💡 Nuevo: Voltear tarjetas en móviles al hacer clic
+document.querySelectorAll('.clic-volteo').forEach(card => {
+  card.addEventListener('click', () => {
+    card.querySelector('.flip-card-inner').classList.toggle('rotada');
+  });
+});
