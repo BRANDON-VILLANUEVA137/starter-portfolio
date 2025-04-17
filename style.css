@@ -81,7 +81,7 @@ body {
     width: 20px;
   }
   
-  .proyecto a,
+  .flip-card-back a,
   .btn-descargar {
     display: inline-block;
     margin-top: 10px;
