@@ -144,6 +144,8 @@ body {
   }
   
   .flip-card {
+    min-height: 350px;
+
     perspective: 1000px;
   }
   
@@ -207,6 +209,19 @@ body {
     background-color: #1d4ed8;
   }
   
+  .flip-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+  }
+  
+  .columna,
+  .tarjeta {
+    height: 100%;
+  }
+  
+
   @media (max-width: 900px) {
     .grid-tres-columnas {
       grid-template-columns: 1fr;
@@ -241,10 +256,6 @@ body {
     .foto-perfil {
       width: 90px;
       height: 90px;
-    }
-  
-    .skills {
-      grid-template-columns: 1fr;
     }
   
     .skills li {
