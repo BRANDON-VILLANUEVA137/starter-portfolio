@@ -155,10 +155,6 @@ body {
     transform-style: preserve-3d;
   }
   
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
   .flip-card-front,
   .flip-card-back {
     position: absolute;
@@ -194,6 +190,23 @@ body {
   .flip-card-inner.rotada {
     transform: rotateY(180deg);
   }
+
+  .btn-volver {
+    margin-top: 20px;
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .btn-volver:hover {
+    background-color: #1d4ed8;
+  }
+  
   @media (max-width: 900px) {
     .grid-tres-columnas {
       grid-template-columns: 1fr;
@@ -222,6 +235,27 @@ body {
     .flip-card-front,
     .flip-card-back {
       padding: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    .foto-perfil {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .skills {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills li {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .proyecto a,
+    .btn-descargar {
+      padding: 8px 14px;
+      font-size: 13px;
     }
   }
   

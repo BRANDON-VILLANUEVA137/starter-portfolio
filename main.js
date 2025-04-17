@@ -38,3 +38,11 @@ document.querySelectorAll('.clic-volteo').forEach(card => {
     card.querySelector('.flip-card-inner').classList.toggle('rotada');
   });
 });
+
+document.querySelectorAll('.btn-volver').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation(); // evitar doble clic
+    const card = btn.closest('.flip-card-inner');
+    card.classList.remove('rotada');
+  });
+});
